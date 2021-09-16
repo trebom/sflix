@@ -1,0 +1,4 @@
+- [ ] home
+- [ ] tv shows
+- [ ] search
+- [ ]  detail

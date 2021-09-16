@@ -1,0 +1,42 @@
+* npx create-react-app shinflix
+    (npm 이나 yarn 이용시 남아있는 올드버전을 저장함 -> 업데이트 필요
+    npx 이용하면 설치후 삭제)
+
+* App.js index.html, index.js 파일만 남기고 나머지 삭제
+* yarn add prop-types
+* yarn start (실행)
+* webpack 버전 에러시 
+    - If you would prefer to ignore this check, add SKIP_PREFLIGHT_CHECK=true to an .env file in your project.
+* .env 는 지원 안해서 jsconfig.js 로 변경
+    - .env 일 경우
+        NOTE_PATH=src
+    - jsconfig.js 일 경우
+        {
+            "compilerOptions": {
+            "baseUrl": "src"
+            },
+            "include": ["src"]
+        }
+
+* src/Components 폴더 생성
+    App.js 복사
+
+* yarn add react-router-dom
+* yarn add styled-components (local)
+* yarn add styled-reset (global)
+
+themoviedb.org
+API = "5d4724c0d4546b8580780df045c4156e"
+https://developers.themoviedb.org/3/movies/get-popular-movies
+- try-it-out
+send request = https://api.themoviedb.org/3/movie/popular?api_key=5d4724c0d4546b8580780df045c4156e&language=en-US&page=1
+
+- [ ] Now playing (Movie)
+- [ ] Upcoming (Movie)
+- [ ] Top rated (TV)
+- [ ] Popular  (TV, X)
+- [ ] Airing Today (TV)
+- [ ] TV Show Detail
+- [ ] Movie Detail
+
+* yarn add axios
